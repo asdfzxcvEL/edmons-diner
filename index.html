@@ -1,0 +1,87 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+    <body>
+        <header>
+            <div class="banner" alt="Picture of a burger for site banner">
+                <h1>Edmon's Diner</h1>
+                <h2>The best burgers and pizzas in town.</h2>
+            </div>
+        </header>
+        <main>
+            <section>
+                <div class="container">
+                    <div class="food-list" id="food-list">
+                    </div>
+                </div>
+            </section>
+            
+            <section class="order-summary" id="order-summary">
+                <div class="container">
+                    <h1>Your order</h1>
+                    <div class="order-list" id="order-list">
+                    </div>
+                    <div class="total-price">
+                        <h1>Total price:</h1>
+                        <h2 id="sum">$0</h2>
+                    </div>
+                    <button class="purchase" id="purchase-btn">Complete order</button>
+                </div>
+            </section>
+            
+            <section class="modal" id="modal">
+                <div class="container">
+                    <form>
+                        <h1>Enter card details</h1>
+                        <button>X</button>
+                        <input 
+                            id="name"
+                            type="text"
+                            placeholder="Enter your name" 
+                            title="Enter your name"
+                            required
+                            >
+                        <input 
+                            id="card"
+                            type="text"
+                            placeholder="Enter your card number" 
+                            pattern="\d{4}-?\d{4}-?\d{4}-?\d{4}"
+                            title="Enter a valid 16-digit credit card number"
+                            maxlength="16"
+                            required
+                            >
+                        <input 
+                            id="cvv"
+                            type="text"
+                            placeholder="Enter CVV"
+                            pattern="\d{3,4}" 
+                            title="Enter a valid 3 or 4 digit CVV code"
+                            maxlength="4"
+                            required
+                            >
+                        <input 
+                            class="submit-btn" 
+                            id="submit-btn"
+                            type="submit" 
+                            value="Pay"
+                            return false;
+                            >
+                    </form>
+                </div>
+            </section>
+            
+            <section>
+                <div class="container">
+                    <h1 id="thanks">epic sauce</h1>
+                </div>
+            </section>
+            
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
