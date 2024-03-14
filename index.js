@@ -10,13 +10,15 @@ document.addEventListener("click", function(e){
         addFoodItem(e.target.dataset.addBtn)
     } else if (e.target.dataset.removeBtn) {
         removeFoodItem(e.target.dataset.removeBtn)
-    } else if (e.target.id === "purchase-btn") {
+    } else if (e.target.id === "complete-order-btn") {
         showModal()
     } else if (e.target.id === "submit-btn" && formFilled()) {
         e.preventDefault()
         hideModal()
         hideOrderSummary()
         showThanks()
+    } else if (e.target.id === "close-btn") {
+        hideModal()
     }
 })
 

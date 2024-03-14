@@ -72,6 +72,7 @@ body {
 
 .food-item h4{
     color: #8B8B8B;
+    width: 300px;
 }
 
 .food-item button {
@@ -121,6 +122,10 @@ body {
     cursor: pointer;
 }
 
+.order-item button:hover {
+    color: #252525;
+}
+
 .total-price {
     border-top: 2px solid #393333;
     padding-top: 10px;
@@ -135,7 +140,7 @@ body {
     
 }
 
-.purchase {
+.complete-order {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
     font-weight: 700;
@@ -147,6 +152,10 @@ body {
     height: 60px;
     margin-bottom: 53px;
     cursor: pointer;
+}
+
+.complete-order:hover {
+    background: #059669;
 }
 
 /* modal */
@@ -187,15 +196,21 @@ body {
 
 }
 
-.modal .submit-btn {
+.modal .pay-btn {
     background: #16DB99;
     border: none;
     color: white;
     padding: 0;
-    margin-top: 40px
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+.modal .pay-btn:hover {
+    background: #059669;
 }
 
 .modal button {
+    color: darkgray;
     border: none;
     background: none;
     font-size: 30px;
@@ -203,6 +218,10 @@ body {
     top: 10px;
     right: 10px;
     cursor: pointer;
+}
+
+.modal button:hover {
+    color: #252525;
 }
 
 /* thank you message */
@@ -216,4 +235,22 @@ body {
     padding: 40px;
     margin-top: 45px;
     margin-bottom: 55px;
+}
+
+/* scrollbar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
